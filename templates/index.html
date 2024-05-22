@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask</title>
+</head>
+<body>
+    <h1>Chat</h1>
+    <form action="/" method="post">
+        <select name="light_color">
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="blinking-yellow">Blinking Yellow</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    {% if response %}
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>
