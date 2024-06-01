@@ -3,7 +3,11 @@ click==8.1.7
 colorama==0.4.6
 experta==1.9.4
 Flask==2.2.5
+Flask-Login==0.6.3
+Flask-SQLAlchemy==3.0.5
+Flask-WTF==1.1.1
 frozendict==1.2
+greenlet==3.0.3
 gunicorn==22.0.0
 importlib-metadata==6.7.0
 itsdangerous==2.1.2
@@ -17,13 +21,16 @@ packaging==24.0
 pandas==1.3.5
 patsy==0.5.6
 pgmpy==0.1.25
+psycopg2==2.9.9
 pyparsing==3.1.2
 python-dateutil==2.9.0.post0
+python-dotenv==0.21.1
 pytz==2024.1
 schema==0.6.7
 scikit-learn==1.0.2
 scipy==1.7.3
 six==1.16.0
+SQLAlchemy==2.0.30
 statsmodels==0.13.5
 threadpoolctl==3.1.0
 torch==1.13.1
@@ -31,4 +38,5 @@ tqdm==4.66.4
 typing_extensions==4.7.1
 Werkzeug==2.2.3
 wincertstore==0.2
+WTForms==3.0.1
 zipp==3.15.0

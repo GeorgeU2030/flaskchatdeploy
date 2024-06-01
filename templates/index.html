@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Chat</h1>
-    <form action="/" method="post">
+    <form action="/index" method="post">
         <select name="light_color">
             <option value="green">Green</option>
             <option value="red">Red</option>
@@ -19,5 +19,14 @@
     {% if response %}
         <p>{{ response }}</p>
     {% endif %}
+    {% if user %}
+        <p>Logged in as: {{ user.email }}</p>
+        <a href="/logout">Logout</a>
+    {% else %}
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    {% endif %}
+
+
 </body>
 </html>
